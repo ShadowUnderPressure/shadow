@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000000;
+        }
+
+        header {
+            background: #ff0000;
+            color: rgb(0, 0, 0);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px solid #ff0000;
+            color: rgb(255, 0, 0);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .wallpaper-card {
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            background-color: rgb(255, 0, 0);
+            width: calc(33% - 20px); /* Three columns layout */
+            position: relative; /* For positioning the download button */
+        }
+
+        .wallpaper-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .download-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000000;
+            color: rgb(255, 0, 0);
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #000000;
+            color: rgb(255, 0, 0);
+        }
+
+        @media (max-width: 768px) {
+            .wallpaper-card {
+                width: calc(50% - 20px); /* Two columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .wallpaper-card {
+                width: calc(100% - 20px); /* One column on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Car Wallpapers</h1>
+        <nav>
+            <ul>
+                <li><a href="#desktop">Desktop Wallpapers</a></li>
+                <li><a href="#laptop">Laptop Wallpapers</a></li>
+                <li><a href="#phone">Phone Wallpapers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="desktop">
+            <h2>Desktop Wallpapers</h2>
+            <div class="gallery">
+                <div class="wallpaper-card">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjTTNx9vpKHfSvgwa1pQS3XSKNpB23PLyP-MYd5kMRaBOqMsLhYvHmKYxeK_3idKi-2jPOmGFRbEJBWUl48DS2pUvlSJIMb1GbNBpr_AbjLH_gtqK6wWhlQqRWvR4pjCOfeKf00nPph-pGlj5d1abGHgwXKsdULC9U3s77RNgc9sJfYKcexeQmkTYx_GOg=s1600-rw" alt="Desktop Wallpaper 1">
+                    <a href="https://blogger.googleusercontent.com/img/a/AVvXsEjTTNx9vpKHfSvgwa1pQS3XSKNpB23PLyP-MYd5kMRaBOqMsLhYvHmKYxeK_3idKi-2jPOmGFRbEJBWUl48DS2pUvlSJIMb1GbNBpr_AbjLH_gtqK6wWhlQqRWvR4pjCOfeKf00nPph-pGlj5d1abGHgwXKsdULC9U3s77RNgc9sJfYKcexeQmkTYx_GOg=s1600-rw" alt="Desktop Wallpaper 1" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://i.pinimg.com/originals/65/3a/b9/653ab9dd1ef121f163c484d03322f1a9.jpg" alt="Desktop Wallpaper 2">
+                    <a href="https://i.pinimg.com/originals/65/3a/b9/653ab9dd1ef121f163c484d03322f1a9.jpg" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://img.freepik.com/free-photo/batmobile-concept-car-with-neon-lights_23-2151649881.jpg?semt=ais_hybrid" alt="Desktop Wallpaper 3">
+                    <a href="https://img.freepik.com/free-photo/batmobile-concept-car-with-neon-lights_23-2151649881.jpg?semt=ais_hybrid" download class="download-btn">Download</a>
+                </div>
+                 <div class="wallpaper-card">
+                    <img src="https://preview.redd.it/4k-wallpaper-sports-cars-on-track-v0-3kgox8x929sa1.jpg?width=640&crop=smart&auto=webp&s=cc89bc2a15698519f0160b67956d3093d84e05c8" alt="Laptop Wallpaper 1">
+                    <a href="https://preview.redd.it/4k-wallpaper-sports-cars-on-track-v0-3kgox8x929sa1.jpg?width=640&crop=smart&auto=webp&s=cc89bc2a15698519f0160b67956d3093d84e05c8" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://preview.redd.it/4k-wallpaper-sports-cars-on-track-v0-9ujw5dx929sa1.jpg?width=640&crop=smart&auto=webp&s=0f5da3665bb3e79bda5096c174689f7bead1b77b" alt="Laptop Wallpaper 2" alt="Desktop Wallpaper 2">
+                    <a href="https://preview.redd.it/4k-wallpaper-sports-cars-on-track-v0-9ujw5dx929sa1.jpg?width=640&crop=smart&auto=webp&s=0f5da3665bb3e79bda5096c174689f7bead1b77b" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://images.freecreatives.com/wp-content/uploads/2015/06/cool-cars-nissan-wallpaper-hd-desktop-car-wallpaper.jpg" alt="Laptop Wallpaper 3" alt="Desktop Wallpaper 3">
+                    <a href="https://images.freecreatives.com/wp-content/uploads/2015/06/cool-cars-nissan-wallpaper-hd-desktop-car-wallpaper.jpg" download class="download-btn">Download</a>
+                </div>
+                <!-- Add more desktop wallpapers as needed -->
+            </div>
+        </section>
+
+        <section id="laptop">
+            <h2>smart-watch wallpapers</h2>
+            <div class="gallery">
+                <div class="wallpaper-card">
+                    <img src="https://wallpaperswide.com/download/2014_mclaren_p1_car-wallpaper-1280x1280.jpg" alt="Laptop Wallpaper 1">
+                    <a href="https://wallpaperswide.com/download/2014_mclaren_p1_car-wallpaper-1280x1280.jpg" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://i.pinimg.com/originals/d3/02/05/d30205fb951acad1677e590bce858dae.jpg" alt="Laptop Wallpaper 2">
+                    <a href="https://i.pinimg.com/originals/d3/02/05/d30205fb951acad1677e590bce858dae.jpg" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://img.recraft.ai/aMANA-lmSLwAwJIZ_FirlmUx4oeOj90RT7snmF2dlow/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/85aa6593-1967-419b-8fd6-5d0e3f9a31a6@jpg" alt="Laptop Wallpaper 3">
+                    <a href="https://img.recraft.ai/aMANA-lmSLwAwJIZ_FirlmUx4oeOj90RT7snmF2dlow/rs:fit:1024:1024:0/q:95/g:no/plain/abs://prod/images/85aa6593-1967-419b-8fd6-5d0e3f9a31a6@jpg" download class="download-btn">Download</a>
+                </div>
+                <!-- Add more laptop wallpapers as needed -->
+            </div>
+        </section>
+
+        <section id="phone">
+            <h2>Phone Wallpapers</h2>
+            <div class="gallery">
+                <div class="wallpaper-card">
+                    <img src="https://i.pinimg.com/736x/39/42/64/394264ead42d45e7588f13f6ae0e9ad3.jpg" alt="Phone Wallpaper 1">
+                    <a href="https://i.pinimg.com/736x/39/42/64/394264ead42d45e7588f13f6ae0e9ad3.jpg" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yOV9leHRyZW1lX2Nsb3NlX3VwX3Bob3RvX29mX2JsYWNrX3Nwb3J0X2Nhcl93YV9lZjkwZWY2Ny0xZjM0LTQwNGQtODg5MS00ZTMwNTk3YjQ5OGFfMS5qcGc.jpg">
+                    <a href="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yOV9leHRyZW1lX2Nsb3NlX3VwX3Bob3RvX29mX2JsYWNrX3Nwb3J0X2Nhcl93YV9lZjkwZWY2Ny0xZjM0LTQwNGQtODg5MS00ZTMwNTk3YjQ5OGFfMS5qcGc.jpg" download class="download-btn">Download</a>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="https://mrwallpaper.com/images/hd/car-4k-ultra-hd-dark-phone-jm4ogxrk6iuc69wl.jpg" alt="Phone Wallpaper 3">
+                 <a href="https://mrwallpaper.com/images/hd/car-4k-ultra-hd-dark-phone-jm4ogxrk6iuc69wl.jpg" download class="download-btn">Download</a>
+                </div>
+                <!-- Add more phone wallpapers as needed -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wallpaper Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
